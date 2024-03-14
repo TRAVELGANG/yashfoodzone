@@ -1,0 +1,325 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    background-repeat: no-repeat;
+    
+}
+.search{
+    background-color: rgb(253, 167, 7);
+}
+
+.header{
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo{
+    font-size: 25px;
+    color:orange;
+}
+
+.nav{
+    position: relative;
+    left:-180px;
+}
+
+a{
+    padding:5px 15px;
+    color:orange;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+    text-decoration: underline;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search{
+    font-size: 25px;
+}
+
+.search i{
+    padding:5px 20px;
+}
+
+
+/***************heading**************/
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    align-items: center;
+}
+
+.mainright{
+    margin:-66px;
+}
+.right{
+    width:440px;
+    height: 440px;
+    background-image: url('food.png');
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: shake 13s ease-in-out infinite ;
+}
+
+
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.right::before{
+    width:430px;
+    height:430px;
+    border:3px solid rgb(253, 167, 7);
+    content: '';
+    position: absolute;
+    border-radius: 430px;
+    padding:10px;
+}
+/***************left part***********************/
+.left p{
+    color:white;
+    font-size: 35px;
+    initial-letter: 1px;
+    font-style: italic;
+}
+
+
+.left h1{
+    font-size: 90px;
+    color: whitesmoke;
+}
+
+.left p:nth-child(3){
+    color: orange;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.left button{
+    width:150px;
+    height:30px;
+    border-radius: 50px;
+    font-size: 15px;
+    border:2px solid orange;
+    background-color: transparent;
+    color: white;
+    margin:20px 0;   
+}
+
+
+/*********************social media**********/
+.socal-media{
+    position:absolute;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:40px;
+    height:200px;
+    background-color: white;
+    font-size: 25px;
+}
+
+
+
+.socal-media i:hover{
+    color: orange;
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-solid:hover{
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+/***********Menu*********/
+
+.menustyle{
+    background-color: rgb(253, 167, 7);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:30px;
+    padding:40px;
+    background-size: cover;
+    animation: zoomAnimation 2s alternate 3;
+}
+
+@keyframes zoomAnimation{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1.2x);
+    }
+}
+
+.menu .burger{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+}
+
+.menu .pizza{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+    
+}
+
+.menu .pasta{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+}
+
+.menu .manchurian{
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid black;
+    
+}
+
+.menu .cakes{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+}
+.menu .salad{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+    
+}
+
+
+.menu .drinks{
+    margin: 10px;
+    padding: 40px;
+    border: 2px solid black;
+    
+}
+
+.menu .sweets{
+    margin:10px;
+    padding:40px;
+    border:2px solid black;
+}
+
+
+
+.burger,.pizza,.pasta,.manchurian,.cakes,.salad,.drinks,.sweets{
+    background-color: rgb(255, 253, 253);
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+}
+.burgerimg img,.pizza img,.pasta img,.manchurian img,.cakes img,.salad img,.drinks img ,.sweets img{
+    width:200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    border-radius: 350px;
+    mix-blend-mode:multiply;
+    object-fit: cover;    
+}
+
+.burgerdtl,.pizzadtl,.pastadtl,.manchuriandtl,.cakesdtl,.saladdtl,.drinksdtl,.sweetdtl{
+    color:black;
+}
+
+.burger:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.pizza:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.pasta:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.manchurian:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.cakes:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.salad:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.drinks:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+.sweets:hover{
+    box-shadow: 5px 5px 3px white;
+    font-size:xx-large;
+    transition: all 0.5s ease-in-out;
+    border-radius: 100px;
+}
+
+
+
+
+
+

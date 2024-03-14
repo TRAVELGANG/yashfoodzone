@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script>
+        function myfunction(){
+            if(document.getElementById("code1").value == "gpay32"){
+                return true;
+            }
+            else{
+               alert("try again incorrect captcha code not match")
+                return false;
+            }
+
+        }
+    </script>
+    <style>
+        .code{
+            background-color: lightgoldenrodyellow;
+            border: 1px solid black;
+            box-sizing: content-box;
+            width:50px;
+            height:25px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,'cursive';
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+       <legend>User's Details</legend>
+
+        <form>
+            NAME:- <input type="text" placeholder="Enter The Full Name"><br><br>
+            EMAIL ID:- <input type="email" placeholder="Enter The Email Id"><br><br>
+            PHONE NO:- <input type="text" placeholder="Enter The Phone Number"><br><br>
+            PASSWORD:- <input type="password" placeholder="Enter The Password"><br><br>
+            Captcha Code:- <div class="code">gpay32</div><br>
+            <input type="text" id="code1"><br><br>
+            <input type="submit" value="submit" onclick="myfunction()">
+            <input type="reset" value="reset">
+            <div id="here"></div>
+
+        </form>
+    </fieldset>
+</body>
+</html>

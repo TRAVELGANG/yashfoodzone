@@ -1,0 +1,81 @@
+  body{
+    padding:0;
+    margin:0; 
+}
+
+.main{
+    background-color: rgb(94, 93, 93);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.McDonalds{
+    background-color: whitesmoke;
+    border: 1px solid black; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+}
+
+.mcdonaldsimg{
+    margin-left: 50px;
+    width:100px;
+    height:100px;
+}
+
+.nmr{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.innernmr{
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
+.td{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
+.impmain{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    flex-wrap:wrap ;
+}
+
+.rating{
+    margin-right: 80px;
+    background-color: green;
+    color:white
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+.input{
+    background-color: black;
+    font-size: large;
+    color:white;
+    border-radius: 50px;
+}
+
+.input:hover{
+    
+    font-size: xx-large;
+    transition: all 1s ease-in-out;
+
+}
